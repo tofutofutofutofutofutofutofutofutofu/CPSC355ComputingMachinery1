@@ -1,0 +1,14 @@
+login:
+ssh leeca@arm.cpsc.ucalgary.ca
+download:
+scp leeca@arm.cpsc.ucalgary.ca:/home/ugb/leeca/ass1 Desktop
+scp leeca@arm.cpsc.ucalgary.ca:/home/ugb/leeca/ass3\{a,b,c\} Desktop
+
+upload:
+scp Desktop/Ass4/assign4.asm leeca@arm.cpsc.ucalgary.ca:/home/ugb/leeca/ass4
+
+print test
+
+	adrp	x0, priDB			
+	add	x0, x0, :lo12:priDB		
+	bl	printf			

@@ -1,0 +1,391 @@
+Script started on 2021-10-21 14:06:37-06:00
+]0;leeca@csa3:~/ass3leeca@csa3:~/ass3$ gexitstopquit[K[K[K[Kgcc assign3.s -o assign3-o[K[K.out -g
+]0;leeca@csa3:~/ass3leeca@csa3:~/ass3$ gdb assign3.out
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign3.out...done.
+(gdb) p[Kb outTop
+Breakpoint 1 at 0x4006bc: file assign3.s, line 157.
+(gdb) b print3
+Breakpoint 2 at 0x400758: file assign3.s, line 215.
+(gdb) r
+Starting program: /home/ugb/leeca/ass3/assign3.out 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Unsorted array:
+v[0] = 359
+v[1] = 454
+v[2] = 105
+v[3] = 115
+v[4] = 81
+v[5] = 255
+v[6] = 74
+v[7] = 236
+v[8] = 297
+v[9] = 205
+v[10] = 186
+v[11] = 427
+v[12] = 498
+v[13] = 251
+v[14] = 483
+v[15] = 326
+v[16] = 124
+v[17] = 194
+v[18] = 84
+v[19] = 504
+v[20] = 283
+v[21] = 488
+v[22] = 487
+v[23] = 397
+v[24] = 374
+v[25] = 346
+v[26] = 302
+v[27] = 99
+v[28] = 51
+v[29] = 415
+v[30] = 201
+v[31] = 410
+v[32] = 358
+v[33] = 306
+v[34] = 13
+v[35] = 439
+v[36] = 49
+v[37] = 88
+v[38] = 163
+v[39] = 346
+v[40] = 293
+v[41] = 349
+v[42] = 261
+v[43] = 279
+v[44] = 88
+v[45] = 233
+v[46] = 94
+v[47] = 212
+v[48] = 427
+v[49] = 178
+v[50] = 205
+v[51] = 198
+v[52] = 155
+v[53] = 180
+v[54] = 84
+v[55] = 17
+v[56] = 14
+v[57] = 386
+v[58] = 116
+v[59] = 65
+v[60] = 289
+v[61] = 317
+v[62] = 476
+v[63] = 135
+v[64] = 112
+v[65] = 489
+v[66] = 62
+v[67] = 161
+v[68] = 65
+v[69] = 225
+v[70] = 508
+v[71] = 359
+v[72] = 62
+v[73] = 257
+v[74] = 126
+v[75] = 151
+v[76] = 490
+v[77] = 220
+v[78] = 363
+v[79] = 406
+v[80] = 399
+v[81] = 56
+v[82] = 92
+v[83] = 42
+v[84] = 236
+v[85] = 176
+v[86] = 59
+v[87] = 251
+v[88] = 50
+v[89] = 175
+v[90] = 316
+v[91] = 340
+v[92] = 492
+v[93] = 280
+v[94] = 475
+v[95] = 92
+v[96] = 258
+v[97] = 26
+v[98] = 254
+v[99] = 323
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c[Kx[Kinfo frame
+Stack level 0, frame at 0xfffffffff030:
+ pc = 0x4006bc in outTop (assign3.s:157); saved pc = 0x40069c
+ called by frame at 0xfffffffff030
+ source language asm.
+ Arglist at 0xfffffffff030, args: 
+ Locals at 0xfffffffff030, Previous frame's sp is 0xfffffffff030
+(gdb) x/432ub $fp
+0xfffffffff030:	224	241	255	255	255	255	0	0
+0xfffffffff038:	164	185	85	191	255	255	0	0
+0xfffffffff040:	50	0	0	0	100	0	0	0
+0xfffffffff048:	1	0	0	0	0	0	0	0
+0xfffffffff050:	103	1	0	0	198	1	0	0
+0xfffffffff058:	105	0	0	0	115	0	0	0
+0xfffffffff060:	81	0	0	0	255	0	0	0
+0xfffffffff068:	74	0	0	0	236	0	0	0
+0xfffffffff070:	41	1	0	0	205	0	0	0
+0xfffffffff078:	186	0	0	0	171	1	0	0
+0xfffffffff080:	242	1	0	0	251	0	0	0
+0xfffffffff088:	227	1	0	0	70	1	0	0
+0xfffffffff090:	124	0	0	0	194	0	0	0
+0xfffffffff098:	84	0	0	0	248	1	0	0
+0xfffffffff0a0:	27	1	0	0	232	1	0	0
+0xfffffffff0a8:	231	1	0	0	141	1	0	0
+0xfffffffff0b0:	118	1	0	0	90	1	0	0
+0xfffffffff0b8:	46	1	0	0	99	0	0	0
+0xfffffffff0c0:	51	0	0	0	159	1	0	0
+0xfffffffff0c8:	201	0	0	0	154	1	0	0
+0xfffffffff0d0:	102	1	0	0	50	1	0	0
+0xfffffffff0d8:	13	0	0	0	183	1	0	0
+0xfffffffff0e0:	49	0	0	0	88	0	0	0
+0xfffffffff0e8:	163	0	0	0	90	1	0	0
+0xfffffffff0f0:	37	1	0	0	93	1	0	0
+0xfffffffff0f8:	5	1	0	0	23	1	0	0
+0xfffffffff100:	88	0	0	0	233	0	0	0
+0xfffffffff108:	94	0	0	0	212	0	0	0
+0xfffffffff110:	171	1	0	0	178	0	0	0
+0xfffffffff118:	205	0	0	0	198	0	0	0
+0xfffffffff120:	155	0	0	0	180	0	0	0
+0xfffffffff128:	84	0	0	0	17	0	0	0
+0xfffffffff130:	14	0	0	0	130	1	0	0
+0xfffffffff138:	116	0	0	0	65	0	0	0
+0xfffffffff140:	33	1	0	0	61	1	0	0
+0xfffffffff148:	220	1	0	0	135	0	0	0
+0xfffffffff150:	112	0	0	0	233	1	0	0
+0xfffffffff158:	62	0	0	0	161	0	0	0
+0xfffffffff160:	65	0	0	0	225	0	0	0
+0xfffffffff168:	252	1	0	0	103	1	0	0
+0xfffffffff170:	62	0	0	0	1	1	0	0
+0xfffffffff178:	126	0	0	0	151	0	0	0
+0xfffffffff180:	234	1	0	0	220	0	0	0
+0xfffffffff188:	107	1	0	0	150	1	0	0
+0xfffffffff190:	143	1	0	0	56	0	0	0
+0xfffffffff198:	92	0	0	0	42	0	0	0
+0xfffffffff1a0:	236	0	0	0	176	0	0	0
+0xfffffffff1a8:	59	0	0	0	251	0	0	0
+0xfffffffff1b0:	50	0	0	0	175	0	0	0
+0xfffffffff1b8:	60	1	0	0	84	1	0	0
+0xfffffffff1c0:	236	1	0	0	24	1	0	0
+0xfffffffff1c8:	219	1	0	0	92	0	0	0
+0xfffffffff1d0:	2	1	0	0	26	0	0	0
+0xfffffffff1d8:	254	0	0	0	67	1	0	0
+(gdb) c
+Continuing.
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c
+Continuing.
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c
+Continuing.
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c
+Continuing.
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c
+Continuing.
+
+Breakpoint 1, outTop () at assign3.s:157
+157	outTop:	ldr	i_r, [fp, gap_s]		// @@@for (i = gap...) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) c
+Continuing.
+
+Breakpoint 2, print3 () at assign3.s:215
+215	print3:	adrp	x0, line3			//@@@ printf("Sorted Array:\n"); @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(gdb) cx/432ub $fp[C[C[C[C[C[C[1Pinfo frame[C[C[C[C[C[Cx/432ub $fp
+0xfffffffff030:	224	241	255	255	255	255	0	0
+0xfffffffff038:	164	185	85	191	255	255	0	0
+0xfffffffff040:	0	0	0	0	100	0	0	0
+0xfffffffff048:	98	0	0	0	14	0	0	0
+0xfffffffff050:	252	1	0	0	248	1	0	0
+0xfffffffff058:	242	1	0	0	236	1	0	0
+0xfffffffff060:	234	1	0	0	233	1	0	0
+0xfffffffff068:	232	1	0	0	231	1	0	0
+0xfffffffff070:	227	1	0	0	220	1	0	0
+0xfffffffff078:	219	1	0	0	198	1	0	0
+0xfffffffff080:	183	1	0	0	171	1	0	0
+0xfffffffff088:	171	1	0	0	159	1	0	0
+0xfffffffff090:	154	1	0	0	150	1	0	0
+0xfffffffff098:	143	1	0	0	141	1	0	0
+0xfffffffff0a0:	130	1	0	0	118	1	0	0
+0xfffffffff0a8:	107	1	0	0	103	1	0	0
+0xfffffffff0b0:	103	1	0	0	102	1	0	0
+0xfffffffff0b8:	93	1	0	0	90	1	0	0
+0xfffffffff0c0:	90	1	0	0	84	1	0	0
+0xfffffffff0c8:	70	1	0	0	67	1	0	0
+0xfffffffff0d0:	61	1	0	0	60	1	0	0
+0xfffffffff0d8:	50	1	0	0	46	1	0	0
+0xfffffffff0e0:	41	1	0	0	37	1	0	0
+0xfffffffff0e8:	33	1	0	0	27	1	0	0
+0xfffffffff0f0:	24	1	0	0	23	1	0	0
+0xfffffffff0f8:	5	1	0	0	2	1	0	0
+0xfffffffff100:	1	1	0	0	255	0	0	0
+0xfffffffff108:	254	0	0	0	251	0	0	0
+0xfffffffff110:	251	0	0	0	236	0	0	0
+0xfffffffff118:	236	0	0	0	233	0	0	0
+0xfffffffff120:	225	0	0	0	220	0	0	0
+0xfffffffff128:	212	0	0	0	205	0	0	0
+0xfffffffff130:	205	0	0	0	201	0	0	0
+0xfffffffff138:	198	0	0	0	194	0	0	0
+0xfffffffff140:	186	0	0	0	180	0	0	0
+0xfffffffff148:	178	0	0	0	176	0	0	0
+0xfffffffff150:	175	0	0	0	163	0	0	0
+0xfffffffff158:	161	0	0	0	155	0	0	0
+0xfffffffff160:	151	0	0	0	135	0	0	0
+0xfffffffff168:	126	0	0	0	124	0	0	0
+0xfffffffff170:	116	0	0	0	115	0	0	0
+0xfffffffff178:	112	0	0	0	105	0	0	0
+0xfffffffff180:	99	0	0	0	94	0	0	0
+0xfffffffff188:	92	0	0	0	92	0	0	0
+0xfffffffff190:	88	0	0	0	88	0	0	0
+0xfffffffff198:	84	0	0	0	84	0	0	0
+0xfffffffff1a0:	81	0	0	0	74	0	0	0
+0xfffffffff1a8:	65	0	0	0	65	0	0	0
+0xfffffffff1b0:	62	0	0	0	62	0	0	0
+0xfffffffff1b8:	59	0	0	0	56	0	0	0
+0xfffffffff1c0:	51	0	0	0	50	0	0	0
+0xfffffffff1c8:	49	0	0	0	42	0	0	0
+0xfffffffff1d0:	26	0	0	0	17	0	0	0
+0xfffffffff1d8:	14	0	0	0	13	0	0	0
+(gdb) c
+Continuing.
+Sorted array:
+v[0] = 508
+v[1] = 504
+v[2] = 498
+v[3] = 492
+v[4] = 490
+v[5] = 489
+v[6] = 488
+v[7] = 487
+v[8] = 483
+v[9] = 476
+v[10] = 475
+v[11] = 454
+v[12] = 439
+v[13] = 427
+v[14] = 427
+v[15] = 415
+v[16] = 410
+v[17] = 406
+v[18] = 399
+v[19] = 397
+v[20] = 386
+v[21] = 374
+v[22] = 363
+v[23] = 359
+v[24] = 359
+v[25] = 358
+v[26] = 349
+v[27] = 346
+v[28] = 346
+v[29] = 340
+v[30] = 326
+v[31] = 323
+v[32] = 317
+v[33] = 316
+v[34] = 306
+v[35] = 302
+v[36] = 297
+v[37] = 293
+v[38] = 289
+v[39] = 283
+v[40] = 280
+v[41] = 279
+v[42] = 261
+v[43] = 258
+v[44] = 257
+v[45] = 255
+v[46] = 254
+v[47] = 251
+v[48] = 251
+v[49] = 236
+v[50] = 236
+v[51] = 233
+v[52] = 225
+v[53] = 220
+v[54] = 212
+v[55] = 205
+v[56] = 205
+v[57] = 201
+v[58] = 198
+v[59] = 194
+v[60] = 186
+v[61] = 180
+v[62] = 178
+v[63] = 176
+v[64] = 175
+v[65] = 163
+v[66] = 161
+v[67] = 155
+v[68] = 151
+v[69] = 135
+v[70] = 126
+v[71] = 124
+v[72] = 116
+v[73] = 115
+v[74] = 112
+v[75] = 105
+v[76] = 99
+v[77] = 94
+v[78] = 92
+v[79] = 92
+v[80] = 88
+v[81] = 88
+v[82] = 84
+v[83] = 84
+v[84] = 81
+v[85] = 74
+v[86] = 65
+v[87] = 65
+v[88] = 62
+v[89] = 62
+v[90] = 59
+v[91] = 56
+v[92] = 51
+v[93] = 50
+v[94] = 49
+v[95] = 42
+v[96] = 26
+v[97] = 17
+v[98] = 14
+v[99] = 13
+[Inferior 1 (process 18631) exited with code 013]
+(gdb) quit[K[K[K
+]0;leeca@csa3:~/ass3leeca@csa3:~/ass3$ s[Kexit
+exit
+
+Script done on 2021-10-21 14:08:18-06:00

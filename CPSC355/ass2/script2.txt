@@ -1,0 +1,9 @@
+Script started on 2021-10-07 12:06:16-06:00
+]0;leeca@csa3:~/ass2leeca@csa3:~/ass2$ assign[K[K[K[K[K[K./assign2b.out
+original: 0x7F807F80	reversed: 0x01FE01FE 
+]0;leeca@csa3:~/ass2leeca@csa3:~/ass2$ as[K[K./assign2c.out
+original: 0x01FF01FF	reversed: 0xFF80FF80 
+]0;leeca@csa3:~/ass2leeca@csa3:~/ass2$ exit
+exit
+
+Script done on 2021-10-07 12:06:34-06:00

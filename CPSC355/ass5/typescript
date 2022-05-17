@@ -1,0 +1,148 @@
+Script started on 2021-11-25 11:49:37-07:00
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ quit
+bash: quit: command not found
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ script script.txt
+Script started, file is script.txt
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ ./exec
+1 2 - 4 5 * =
+
+20
+
+1 2 - 4 5 + * =
+
+-9
+
+1 1 + = 
+
+2
+
+5465456465465465465465456456456456465456                                        69696969696969696969696969696969 =
+69696969696969696969 ... is too long
+c
+=
+error: stack empty
+
+0
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 11 1 1 1 1 1 1 1 1 1 11 
+=
+
+11
+
+564   100000000000000000=  =
+
+1569325056
+
+not   the origic  ia nal c cod e  e overflows as well
+unknown command t
+unknown command h
+unknown command e
+unknown command o
+unknown command r
+unknown command i
+unknown command g
+unknown command i
+unknown command n
+unknown command a
+unknown command l
+unknown command o
+unknown command d
+unknown command e
+unknown command o
+unknown command v
+unknown command e
+unknown command r
+unknown command f
+unknown command l
+unknown command o
+unknown command w
+unknown command s
+unknown command a
+unknown command s
+unknown command w
+unknown command e
+unknown command l
+unknown command l
+3 3 / =
+
+0
+
+i know it's weird but th  it does t do this
+unknown command i
+unknown command k
+unknown command n
+unknown command o
+unknown command w
+unknown command i
+unknown command t
+unknown command '
+unknown command s
+unknown command w
+unknown command e
+unknown command i
+unknown command r
+unknown command d
+unknown command b
+unknown command u
+unknown command t
+unknown command i
+unknown command t
+unknown command d
+unknown command o
+unknown command e
+unknown command s
+unknown command d
+unknown command o
+unknown command t
+unknown command h
+unknown command i
+unknown command s
+20 20 * =
+
+400
+
+100 100 + 1 + 2 + 3 3      0 + + =
+
+221
+
+20 5 -   =
+
+15
+
+1200 0 / =
+zero divisor popped
+
+1200
+
+woo i amde a      made a calculator
+unknown command w
+unknown command o
+unknown command o
+unknown command i
+unknown command m
+unknown command a
+unknown command d
+unknown command e
+unknown command a
+unknown command a
+unknown command l
+unknown command u
+unknown command l
+unknown command a
+unknown command t
+unknown command o
+unknown command r
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ e[Kquit
+bash: quit: command not found
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ exit
+exit
+Script done, file is script.txt
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ ls
+[0m[38;5;40ma5main.c[0m  a5main.o  a5.o  [38;5;40ma5.s[0m  all.c  all.o  [38;5;40mexec[0m  main.c  makefile  script.txt  [38;5;40mtest[0m  test.o  test.s  typescript
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ logot[Kut[Kt
+bash: logout: not login shell: use `exit'
+]0;leeca@csa1:~/ass5leeca@csa1:~/ass5$ ex[K[Kcd
+]0;leeca@csa1:~leeca@csa1:~$ exit
+exit
+
+Script done on 2021-11-25 11:54:24-07:00

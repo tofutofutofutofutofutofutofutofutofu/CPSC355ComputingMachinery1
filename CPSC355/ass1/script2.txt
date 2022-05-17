@@ -1,0 +1,66 @@
+Script started on 2021-09-27 22:09:19-06:00
+]0;leeca@csa3:~/ass1leeca@csa3:~/ass1$ gdb[K[Kdb [K[K[K[Kld
+ld: no input files
+]0;leeca@csa3:~/ass1leeca@csa3:~/ass1$ ls
+[0m[38;5;40massign1a.out[0m  assign1a.s  assign1b.asm  [38;5;40massign1b.out[0m  assign1b.s  script1.txt  script2.txt
+]0;leeca@csa3:~/ass1leeca@csa3:~/ass1$ gdb assign[K[K[K[K[Kssign1b.out
+GNU gdb (GDB) Fedora 8.1.1-4.fc28
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1b.out...done.
+(gdb) bdon[K[K[K done
+Breakpoint 1 at 0x400690: file assign1b.s, line 107.
+(gdb) r
+Starting program: /home/ugb/leeca/ass1/assign1b.out 
+warning: the debug information found in "/usr/lib/debug//usr/lib64/ld-2.27.so.debug" does not match "/lib/ld-linux-aarch64.so.1" (CRC mismatch).
+
+Missing separate debuginfos, use: dnf debuginfo-install glibc-2.27-38.fc28.aarch64
+warning: the debug information found in "/usr/lib/debug//lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+warning: the debug information found in "/usr/lib/debug//usr/lib64/libc-2.27.so.debug" does not match "/lib64/libc.so.6" (CRC mismatch).
+
+Current x value: -10	 Current y value: -3813	 Current maximum: -3813 
+Current x value: -9	 Current y value: 1478	 Current maximum: 1478 
+Current x value: -8	 Current y value: 4381	 Current maximum: 4381 
+Current x value: -7	 Current y value: 5508	 Current maximum: 5508 
+Current x value: -6	 Current y value: 5399	 Current maximum: 5508 
+Current x value: -5	 Current y value: 4522	 Current maximum: 5508 
+Current x value: -4	 Current y value: 3273	 Current maximum: 5508 
+Current x value: -3	 Current y value: 1976	 Current maximum: 5508 
+Current x value: -2	 Current y value: 883	 Current maximum: 5508 
+Current x value: -1	 Current y value: 174	 Current maximum: 5508 
+Current x value: 0	 Current y value: -43	 Current maximum: 5508 
+Current x value: 1	 Current y value: 268	 Current maximum: 5508 
+Current x value: 2	 Current y value: 1071	 Current maximum: 5508 
+Current x value: 3	 Current y value: 2258	 Current maximum: 5508 
+Current x value: 4	 Current y value: 3649	 Current maximum: 5508 
+Current x value: 5	 Current y value: 4992	 Current maximum: 5508 
+Current x value: 6	 Current y value: 5963	 Current maximum: 5963 
+Current x value: 7	 Current y value: 6166	 Current maximum: 6166 
+Current x value: 8	 Current y value: 5133	 Current maximum: 6166 
+Current x value: 9	 Current y value: 2324	 Current maximum: 6166 
+Current x value: 10	 Current y value: -2873	 Current maximum: 6166 
+
+Breakpoint 1, done () at assign1b.s:107
+107	done:		ldp	x29, x30, [sp], 16 	//Holy Code to end the program
+(gdb) p $x21
+$1 = 6166
+(gdb) c
+Continuing.
+[Inferior 1 (process 6686) exited with code 0104]
+(gdb) q
+]0;leeca@csa3:~/ass1leeca@csa3:~/ass1$ exit
+exit
+
+Script done on 2021-09-27 22:10:22-06:00
