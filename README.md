@@ -1,2 +1,4 @@
 # CPSC355ComputingMachinery1
-Ass Code
+Learning to use ARM V8 Assembly
+
+Review: Simple Instructions and branching and jumping
